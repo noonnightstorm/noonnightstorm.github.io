@@ -3,12 +3,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>毛毛虫</title>
+  <title>datafly</title>
+  <script>
+    // 1. csrf
+    window.ajaxHeader = {
+      'x-csrf-token': 'ARePB13t-N5mS0K47bjM8jqsMmytXU05lia0'
+    };
+
+    // 2. env
+    window.CONFIG = {};
+    window.CONFIG.prefix = '/butterfly-home';
+    window.CONFIG.env = 'dev';
+    window.CONFIG.privateCloud = false;
+  </script>
 </head>
 <body>
   <div id="main"></div>
-  <link rel="stylesheet" href="//datafly.oss-cn-hangzhou.aliyuncs.com/app.css">
-  <script src='//datafly.oss-cn-hangzhou.aliyuncs.com/vendor.js'></script>
-  <script src='//datafly.oss-cn-hangzhou.aliyuncs.com/app.js'></script>
+  <link rel="stylesheet" href="/assets/app.css">
+  <script src='/assets/vendor.js'></script>
+  <script src='/assets/app.js'></script>
 </body>
 </html>
